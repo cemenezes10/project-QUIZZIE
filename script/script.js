@@ -30,7 +30,7 @@ function showQuestion() {
     const questionEl = document.getElementById('question');
     const optionsEl = document.getElementById('options');
     questionEl.textContent = q.question;
-    optionsEl.innerHTML = '';
+    optionsEl.innerHTML = '/homepage/index.html';
     q.options.forEach((opt, idx) => {
         const btn = document.createElement('button');
         btn.textContent = opt;
