@@ -1,2 +1,0 @@
-# project-QUIZZIE
-BEROEPS Project3 - QUIZZIE

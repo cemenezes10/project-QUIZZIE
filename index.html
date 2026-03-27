@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUIZZIE - Mediawijsheid</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="download.png" alt="QUIZZIE Logo" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+    </nav>
+</header>
+
+<main>
+    <div class="welcome-block">
+        <h1>Welkom bij QUIZZIE</h1>
+        <p>Leer alles over mediawijsheid op een leuke, interactieve en speelse manier!</p>
+
+        <label>Vul je naam in:</label>
+        <input type="text" id="player-name" placeholder="Jouw naam">
+        <br><br>
+
+        <p>Kies een quiz om te starten:</p>
+        <button class="quiz-btn" data-quiz="quiz_kai.html">Quiz 1 - Nepnieuws herkennen</button>
+        <button class="quiz-btn" data-quiz="quiz_nikhil.html">Quiz 2 - Invloed Social Media</button>
+        <button class="quiz-btn" data-quiz="quiz_carlos.html">Quiz 3 - Privacy & Online Veiligheid</button>
+    </div>
+</main>
+
+<script>
+const buttons = document.querySelectorAll(".quiz-btn");
+
+buttons.forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+        const name = document.getElementById("player-name").value.trim();
+        if(name===""){
+            alert("Vul eerst je naam in om verder te gaan!");
+            return;
+        }
+        localStorage.setItem("playerName", name);
+        window.location.href = btn.getAttribute("data-quiz");
+    });
+});
+</script>
+</body>
+</html>
