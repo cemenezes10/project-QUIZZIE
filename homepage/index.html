@@ -8,9 +8,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+
 <header>
-    <img src="/images/download.png" alt="QUIZZIE Logo" class="logo" href="index.html">
+    <a href="/homepage/index.html">
+    <img src="/images/download.png" class="logo" alt="QUIZZIE Logo">
+    </a>
+
     <nav>
         <a href="/homepage/index.html">Home</a>
         <a href="/team/team.html">Team</a>
@@ -22,8 +25,11 @@
         <h1>Welkom bij QUIZZIE</h1>
         <p>Leer alles over mediawijsheid op een leuke, interactieve en speelse manier!</p>
 
-        <label>Vul je naam in:</label>
-        <input type="text" id="player-name" placeholder="Jouw naam">
+      <label>Vul je naam in:</label>
+<input type="text" id="player-name" placeholder="Jouw naam">
+
+<button id="start-btn">Start</button>
+
         <br><br>
 
         <p>Kies een quiz om te starten:</p>
@@ -50,19 +56,55 @@
 </main>
 
 <script>
-const buttons = document.querySelectorAll(".quiz-btn");
+document.addEventListener("DOMContentLoaded", () => {
+    const nameInput = document.getElementById("player-name");
+    const startBtn = document.getElementById("start-btn");
+    const quizSection = document.querySelector(".quiz-sectie");
+    const buttons = document.querySelectorAll(".quiz-btn");
 
-buttons.forEach(btn=>{
-    btn.addEventListener("click", ()=>{
-        const name = document.getElementById("player-name").value.trim();
-        if(name===""){
-            alert("Vul eerst je naam in om verder te gaan!");
+    // Quiz-knoppen uitschakelen tot start is geklikt
+    buttons.forEach(btn => btn.disabled = true);
+
+    // Start-knop klik
+    startBtn.addEventListener("click", () => {
+        const name = nameInput.value.trim();
+
+        if (name === "") {
+            alert("Vul eerst je naam in!");
             return;
         }
+
+        // Naam opslaan
         localStorage.setItem("playerName", name);
-        window.location.href = btn.getAttribute("data-quiz");
+
+        // Quiz-sectie tonen
+        quizSection.style.display = "flex";
+
+        // Quiz-knoppen activeren
+        buttons.forEach(btn => btn.disabled = false);
+
+        // Start-knop verbergen (optioneel)
+        startBtn.style.display = "none";
+        nameInput.disabled = true;
+    });
+
+    // Quiz-knoppen gedrag
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const name = nameInput.value.trim();
+
+            if (name === "") {
+                alert("Vul eerst je naam in!");
+                return;
+            }
+
+            window.location.href = btn.getAttribute("data-quiz");
+        });
     });
 });
 </script>
+
+
+
 </body>
 </html>
