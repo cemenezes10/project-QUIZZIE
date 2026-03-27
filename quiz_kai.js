@@ -5,21 +5,21 @@ if(!playerName){
 }
 
 const questions = [
-  // 5 meerkeuze
+
   {type:"meerkeuze", question:"Wat is nepnieuws?", options:["Feitelijk nieuws","Verzonnen nieuws","Nieuws van gisteren"], answer:1},
   {type:"meerkeuze", question:"Wat kan helpen nepnieuws te herkennen?", options:["Bron controleren","Alles geloven","Snelle reactie"], answer:0},
   {type:"meerkeuze", question:"Een betrouwbare bron is:", options:["Satire site","Bekende krant","Instagram post"], answer:1},
   {type:"meerkeuze", question:"Wat is een virale nepvideo?", options:["Video die viraal gaat","Video van de krant","Documentaire"], answer:0},
   {type:"meerkeuze", question:"Welke bron is meestal betrouwbaar?", options:["Blogpost","Krant","Onbekend forum"], answer:1},
 
-  // 5 waar/onwaar
+
   {type:"waarOnwaar", question:"Nepnieuws is altijd bedoeld om mensen te misleiden", answer:true},
   {type:"waarOnwaar", question:"Alle nieuwswebsites zijn betrouwbaar", answer:false},
   {type:"waarOnwaar", question:"Foto's kunnen ook nep zijn", answer:true},
   {type:"waarOnwaar", question:"Nieuws delen zonder te controleren kan gevaarlijk zijn", answer:true},
   {type:"waarOnwaar", question:"Satire nieuws is hetzelfde als nepnieuws", answer:false},
 
-  // 5 open vragen
+ 
   {type:"open", question:"Noem een manier om feiten te checken", answer:["factcheck","fact check","controle"]},
   {type:"open", question:"Wie kan nepnieuws verspreiden?", answer:["iedereen"]},
   {type:"open", question:"Wat kun je doen als je nepnieuws ziet?", answer:["niet delen","niet verspreiden"]},
