@@ -153,6 +153,7 @@ button.quiz-btn:hover {
 }
 
 .quiz-container {
+ 
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
@@ -161,9 +162,11 @@ button.quiz-btn:hover {
     transition: transform 0.2s;
 }
 
-.quiz-container:hover {
-    transform: translateY(-3px);
+.quiz-container a:hover {
+    color: #0b9e0b;
+    text-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
+
 
 .question {
     margin-bottom: 15px;
@@ -207,3 +210,74 @@ input[type="text"] {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     margin-top: 20px;
 }
+
+
+
+.score-details {
+
+    margin-top: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+ 
+.score-item {
+
+    background: #ffffff;
+
+    border-left: 6px solid #03ff03;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    font-size: 16px;
+
+}
+ 
+.score-item strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 17px;
+
+}
+ 
+
+
+.fouten-lijst {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 10px;
+
+}
+ 
+.fout-badge {
+
+    background-color: #000;
+
+    color: #ff0303;
+
+    padding: 6px 10px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+ 

@@ -22,7 +22,7 @@
 
 <main>
     <div class="welcome-block">
-        <h1>Welkom bij QUIZZIE</h1>
+        <h1>Welkom bij QUIZZIE Mediawijsheid</h1>
         <p>Leer alles over mediawijsheid op een leuke, interactieve en speelse manier!</p>
 
       <label>Vul je naam in:</label>
@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const quizSection = document.querySelector(".quiz-sectie");
     const buttons = document.querySelectorAll(".quiz-btn");
 
-    // Quiz-knoppen uitschakelen tot start is geklikt
+ 
     buttons.forEach(btn => btn.disabled = true);
 
-    // Start-knop klik
+
     startBtn.addEventListener("click", () => {
         const name = nameInput.value.trim();
 
@@ -74,16 +74,16 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Naam opslaan
+   
         localStorage.setItem("playerName", name);
 
-        // Quiz-sectie tonen
+
         quizSection.style.display = "flex";
 
-        // Quiz-knoppen activeren
+ 
         buttons.forEach(btn => btn.disabled = false);
 
-        // Start-knop verbergen (optioneel)
+
         startBtn.style.display = "none";
         nameInput.disabled = true;
     });
