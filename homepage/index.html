@@ -4,14 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QUIZZIE - Mediawijsheid</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <header>
-    <img src="download.png" alt="QUIZZIE Logo" class="logo">
+    <img src="/images/download.png" alt="QUIZZIE Logo" class="logo" href="index.html">
     <nav>
-        <a href="index.html">Home</a>
-        <a href="team.html">Team</a>
+        <a href="/homepage/index.html">Home</a>
+        <a href="/team/team.html">Team</a>
     </nav>
 </header>
 
@@ -25,9 +27,25 @@
         <br><br>
 
         <p>Kies een quiz om te starten:</p>
-        <button class="quiz-btn" data-quiz="quiz_kai.html">Quiz 1 - Nepnieuws herkennen</button>
-        <button class="quiz-btn" data-quiz="quiz_nikhil.html">Quiz 2 - Invloed Social Media</button>
-        <button class="quiz-btn" data-quiz="quiz_carlos.html">Quiz 3 - Privacy & Online Veiligheid</button>
+
+        <div class="quiz-sectie">
+
+            <div class="quiz-blok">
+                <h3>Quiz 1</h3>
+                <button class="quiz-btn" data-quiz="/quiz-paginas/quiz_kai.html">Nepnieuws herkennen</button>
+            </div>
+
+            <div class="quiz-blok">
+                <h3>Quiz 2</h3>
+                <button class="quiz-btn" data-quiz="/quiz-paginas/quiz_nikhil.html">Invloed Social Media</button>
+            </div>
+
+            <div class="quiz-blok">
+                <h3>Quiz 3</h3>
+                <button class="quiz-btn" data-quiz="/quiz-paginas/quiz_carlos.html">Privacy & Online Veiligheid</button>
+            </div>
+
+        </div>
     </div>
 </main>
 

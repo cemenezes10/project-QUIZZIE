@@ -5,21 +5,21 @@ if(!playerName){
 }
 
 const questions = [
-  // 5 meerkeuze
+
   {type:"meerkeuze", question:"Hoe beïnvloedt social media ons gedrag?", options:["Geen effect","Verandering van mening","Altijd positief"], answer:1},
   {type:"meerkeuze", question:"Wat kan leiden tot verslaving aan social media?", options:["Tijdslimiet","Constante notificaties","Geen notificaties"], answer:1},
   {type:"meerkeuze", question:"Wat helpt om social media gezond te gebruiken?", options:["Continu scrollen","Pauzes nemen","Alles geloven"], answer:1},
   {type:"meerkeuze", question:"Wat is een echo chamber?", options:["Een muziekkamer","Een omgeving met alleen dezelfde meningen","Een nieuwstype"], answer:1},
   {type:"meerkeuze", question:"Welke actie kan social media stress verminderen?", options:["Continu scrollen","Minder vergelijken","Alles geloven"], answer:1},
 
-  // 5 waar/onwaar
+
   {type:"waarOnwaar", question:"Likes kunnen je stemming beïnvloeden", answer:true},
   {type:"waarOnwaar", question:"We worden nooit beïnvloed door online advertenties", answer:false},
   {type:"waarOnwaar", question:"Het vergelijken van jezelf met anderen online kan stress veroorzaken", answer:true},
   {type:"waarOnwaar", question:"Commentaar op social media beïnvloedt niemand", answer:false},
   {type:"waarOnwaar", question:"Bewust omgaan met social media kan positief zijn", answer:true},
 
-  // 5 open vragen
+ 
   {type:"open", question:"Noem een manier om je tijd op social media te beperken", answer:["pauze","tijdslimiet","offline gaan"]},
   {type:"open", question:"Wat kun je doen om nep-informatie op social media te vermijden?", answer:["checken","verifiëren","controleren"]},
   {type:"open", question:"Waarom is bewust omgaan met social media belangrijk?", answer:["mentale gezondheid","gezondheid","stress verminderen"]},
