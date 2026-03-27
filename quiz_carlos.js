@@ -5,14 +5,14 @@ if(!playerName){
 }
 
 const questions = [
-  // 5 meerkeuze
+
   {type:"meerkeuze", question:"Wat betekent privacy online?", options:["Alles delen","Persoonlijke gegevens beschermen","Gamen"], answer:1},
   {type:"meerkeuze", question:"Wat is een sterk wachtwoord?", options:["123456","Uniek en lang","Naam van huisdier"], answer:1},
   {type:"meerkeuze", question:"Welke actie beschermt je privacy?", options:["Alles posten","Twee-factor authenticatie gebruiken","Wachtwoorden delen"], answer:1},
   {type:"meerkeuze", question:"Wat is phishing?", options:["E-mailfraude","Nieuwssite","Video"], answer:0},
   {type:"meerkeuze", question:"Welke bron is betrouwbaar?", options:["Blogpost","Krant","Onbekend forum"], answer:1},
 
-  // 5 waar/onwaar
+
   {type:"waarOnwaar", question:"Je gegevens zijn altijd veilig online", answer:false},
   {type:"waarOnwaar", question:"Het delen van persoonlijke info op sociale media kan risico's geven", answer:true},
   {type:"waarOnwaar", question:"Openbare wifi is altijd veilig", answer:false},

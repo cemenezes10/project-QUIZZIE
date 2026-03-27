@@ -1,6 +1,6 @@
-// script.js
 
-// Alle quizvragen per teamlid
+
+
 const quizzes = {
     kai: {
         questions: [
@@ -52,7 +52,7 @@ const quizzes = {
     }
 };
 
-// Quiz functionaliteit (zelfde als eerder)
+
 function startQuiz(quizId) {
     const quizData = quizzes[quizId];
     let currentQuestion = 0;
